@@ -12,12 +12,16 @@
   ],
   "routes": [
     {
+      "src": "/resume-editor/(.*)?",
+      "dest": "/apps/resume-editor/$1"
+    },
+    {
       "src": "/resume-display/(.*)?",
-      "dest": "apps/resume-editor/$1"
+      "dest": "/apps/resume-display/$1"
     },
     {
       "src": "/(.*)?",
-      "dest": "apps/resume-display/$1"
+      "dest": "/apps/resume-display/$1"
     }
   ]
 }
