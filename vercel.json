@@ -12,11 +12,11 @@
   ],
   "routes": [
     {
-      "src": "/backend/(.*)",
+      "src": "/editor/(.*)",
       "dest": "apps/resume-editor/$1"
     },
     {
-      "src": "/(.*)",
+      "src": "/display/(.*)",
       "dest": "apps/resume-display/$1"
     }
   ]
