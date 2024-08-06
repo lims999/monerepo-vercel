@@ -13,15 +13,15 @@
   "routes": [
     {
       "src": "/resume-editor/(.*)?",
-      "dest": "/apps/resume-editor/$1"
+      "dest": "/apps/resume-editor/index"
     },
     {
       "src": "/resume-display/(.*)?",
-      "dest": "/apps/resume-display/$1"
+      "dest": "/apps/resume-display/index"
     },
     {
       "src": "/(.*)?",
-      "dest": "/apps/resume-display/$1"
+      "dest": "/apps/resume-display/index"
     }
   ]
 }
