@@ -18,8 +18,8 @@ const nextConfig = {
         hostname: 'bkimg.cdn.bcebos.com' // 图片资源的域名
       }
     ]
-  },
-  basePath: process.env.NODE_ENV === 'production' ? '/display' : ''
+  }
+  // basePath: process.env.NODE_ENV === 'production' ? '/display' : ''
   // webpack: config => {
   //   config.resolve.alias['@'] = path.resolve(__dirname, 'src');
   //   return config;
