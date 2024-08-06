@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "apps/resume-front/package.json",
+      "use": "@vercel/next"
+    },
+    {
+      "src": "apps/resume-backend/package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/backend/(.*)",
+      "dest": "apps/resume-backend/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "apps/resume-front/$1"
+    }
+  ]
+}

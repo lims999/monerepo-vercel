@@ -1,0 +1,15 @@
+{
+  "root": true,
+  "extends": ["next/core-web-vitals", "rascal"],
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["@", "./apps/resume-front/src"],
+          ["@", "./apps/resume-backend/src"]
+        ],
+        "extensions": [".js", ".jsx", ".mjs", ".ts", ".tsx", ".d.ts"]
+      }
+    }
+  }
+}
