@@ -11,14 +11,14 @@
     }
   ],
   "routes": [
+    { "handle": "filesystem" },
     {
-      "src": "/resume-editor/(.*)?",
-      "headers": { "cache-control": "s-maxage=1000" },
+      "src": "/resume-editor/(.*)",
       "dest": "/apps/resume-editor/index.html"
     },
+    { "handle": "filesystem" },
     {
-      "src": "/resume-display/(.*)?",
-      "headers": { "cache-control": "s-maxage=1000" },
+      "src": "/resume-display/(.*)",
       "dest": "/apps/resume-display/index.html"
     }
   ]
