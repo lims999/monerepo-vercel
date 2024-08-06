@@ -10,16 +10,14 @@
       "use": "@vercel/next"
     }
   ],
-  "routes": [
-    { "handle": "filesystem" },
+  "rewrites": [
     {
-      "src": "/resume-editor/(.*)",
-      "dest": "/apps/resume-editor/index.html"
+      "source": "/editor/(.*)",
+      "destination": "/apps/resume-editor/index.html"
     },
-    { "handle": "filesystem" },
     {
-      "src": "/resume-display/(.*)",
-      "dest": "/apps/resume-display/index.html"
+      "source": "/(.*)",
+      "destination": "/apps/resume-display/index.html"
     }
   ]
 }
