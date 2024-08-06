@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "apps/resume-front/package.json",
+      "src": "apps/resume-display/package.json",
       "use": "@vercel/next"
     },
     {
@@ -17,7 +17,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "apps/resume-front/$1"
+      "dest": "apps/resume-display/$1"
     }
   ]
 }
