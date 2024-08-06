@@ -1,7 +1,6 @@
-/** @type {import('next').NextConfig} */
 import bundleAnalyzer from '@next/bundle-analyzer';
 // import path from 'path';
-
+/** @type {import('next').NextConfig} */
 const withBundleAnalyzer = bundleAnalyzer({
   enabled: process.env.ANALYZE === 'true' // 当环境变量ANALYZE为true时开启
 });
@@ -19,7 +18,8 @@ const nextConfig = {
         hostname: 'bkimg.cdn.bcebos.com' // 图片资源的域名
       }
     ]
-  }
+  },
+  basePath: process.env.NODE_ENV === 'production' ? '/display' : ''
   // webpack: config => {
   //   config.resolve.alias['@'] = path.resolve(__dirname, 'src');
   //   return config;
