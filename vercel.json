@@ -13,10 +13,12 @@
   "routes": [
     {
       "src": "/resume-editor/(.*)?",
+      "headers": { "cache-control": "s-maxage=1000" },
       "dest": "/apps/resume-editor/index.html"
     },
     {
       "src": "/resume-display/(.*)?",
+      "headers": { "cache-control": "s-maxage=1000" },
       "dest": "/apps/resume-display/index.html"
     }
   ]
