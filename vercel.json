@@ -16,7 +16,7 @@
       "dest": "apps/resume-editor/$1"
     },
     {
-      "src": "/resume-editor/(.*)?",
+      "src": "/(.*)?",
       "dest": "apps/resume-display/$1"
     }
   ]
